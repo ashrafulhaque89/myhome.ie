@@ -42,3 +42,7 @@ You can also manually redirect to swagger from here : https://localhost:5001/swa
 A Swagger screenshot given below:
 
 ![Console App output](https://github.com/ashrafulhaque89/myhome.ie/blob/master/Swagger.png)
+
+You can either run Unit Test From Visual Studio or Vistual Studio Code : 
+
+![Console App output](https://github.com/ashrafulhaque89/myhome.ie/blob/master/Unit_test.png)
