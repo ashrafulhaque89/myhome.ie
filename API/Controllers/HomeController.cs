@@ -1,7 +1,5 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.Contracts;
-using API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Domain;
 using Application.Homes;
