@@ -13,7 +13,7 @@ namespace Application.Homes
         public string GroupLogoUrl { get; set; }
         public string BedsString { get; set; }
         public dynamic Price {get; set;}
-        public double SizeStringMeters { get; set; }
+        public dynamic SizeStringMeters { get; set; }
         public string DisplayAddress { get; set; }
         public string PropertyType { get; set; }
         public string BathString { get; set; }

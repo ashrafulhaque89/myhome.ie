@@ -34,6 +34,16 @@ namespace API.Services
             return price;
         }
 
+        // Method to convert SizeStringMeter 0 Value to null
+        public static dynamic ConvertSizeStringMeter(dynamic value)
+        {
+            if(value > 0)
+            {
+                return value;
+            }
+            return null;
+        }
+
         // Service to Add new Property
         public async Task<Home> CreateAsync(Home request)
         {
@@ -91,7 +101,7 @@ namespace API.Services
                 GroupLogoUrl = home.GroupLogoUrl,
                 BedsString = home.BedsString,
                 Price = ConvertPrice(home.Price),
-                SizeStringMeters = home.SizeStringMeters,
+                SizeStringMeters = ConvertSizeStringMeter(home.SizeStringMeters),
                 DisplayAddress = home.DisplayAddress,
                 PropertyType = home.PropertyType,
                 BathString = home.BathString,
@@ -140,7 +150,7 @@ namespace API.Services
                 GroupLogoUrl = home.GroupLogoUrl,
                 BedsString = home.BedsString,
                 Price = ConvertPrice(home.Price),
-                SizeStringMeters = home.SizeStringMeters,
+                SizeStringMeters = ConvertSizeStringMeter(home.SizeStringMeters),
                 DisplayAddress = home.DisplayAddress,
                 PropertyType = home.PropertyType,
                 BathString = home.BathString,
