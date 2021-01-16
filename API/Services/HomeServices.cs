@@ -18,6 +18,22 @@ namespace API.Services
             _context = context;
         }
 
+        // Method to determine whether the Price is Decimal Value or a string (i.e POA)
+        public static dynamic ConvertPrice(string price)
+        {
+            bool IsNumereic(string price)
+            {
+                decimal test;
+                return decimal.TryParse(price, out test);
+            }
+
+            if(IsNumereic(price) == true)
+            {
+                return Convert.ToDecimal(price);
+            }
+            return price;
+        }
+
         // Service to Add new Property
         public async Task<Home> CreateAsync(Home request)
         {
@@ -74,7 +90,7 @@ namespace API.Services
                 PropertyId = home.PropertyId,
                 GroupLogoUrl = home.GroupLogoUrl,
                 BedsString = home.BedsString,
-                Price = home.Price,
+                Price = ConvertPrice(home.Price),
                 SizeStringMeters = home.SizeStringMeters,
                 DisplayAddress = home.DisplayAddress,
                 PropertyType = home.PropertyType,
@@ -123,7 +139,7 @@ namespace API.Services
                 PropertyId = home.PropertyId,
                 GroupLogoUrl = home.GroupLogoUrl,
                 BedsString = home.BedsString,
-                Price = home.Price,
+                Price = ConvertPrice(home.Price),
                 SizeStringMeters = home.SizeStringMeters,
                 DisplayAddress = home.DisplayAddress,
                 PropertyType = home.PropertyType,
