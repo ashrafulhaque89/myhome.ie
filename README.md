@@ -18,7 +18,7 @@ JSON
     "PropertyId" : 4292232,
     "GroupLogoUrl" : "https://photosa.propertyimages.ie/groups/9/0/4/6409/logo.jpg",
     "BedsString" : "2 beds",
-    "Price" : 395000,
+    "Price" : "395000",
     "SizeStringMeters" : 52.95,
     "DisplayAddress" : "Apt. 16 The Northumberlands, Off Lower Mount Street, Dublin 2",
     "PropertyType" : "Apartment",
