@@ -30,14 +30,19 @@ JSON
 - To update Property list, take above sturcture and make HttpPut call to https://localhost:5001/api/home/
 - If any field is EMPTY or NULL you can leave it blank. The API has been designed in a way to omit NULL values from the query result.
 
-Working demo in Azure : https://myhome-ie.azurewebsites.net/api/home
+Working demo of API in Azure : https://myhome-ie.azurewebsites.net/api/home
 ---
-Working demo in Docker Container : https://myhome-ie.herokuapp.com/api/home
+Swagger : https://myhome-ie.azurewebsites.net/swagger/index.html
+---
+Working demo of API in Docker Container : https://myhome-ie.herokuapp.com/api/home
+---
+Swagger : https://myhome-ie.herokuapp.com/swagger/index.html
 ---
 
 To test the API using Swagger simply type "dotnet watch run" from the API directory and you will be redirected to the Swagger UI!
 
-You can also manually redirect to swagger from here : https://localhost:5001/swagger/index.html
+You can also manually redirect to swagger from here while running from your IDE : https://localhost:5001/swagger/index.html
+In the web as working demo : https://myhome-ie.herokuapp.com/swagger/index.html & https://myhome-ie.azurewebsites.net/swagger/index.html
 
 A Swagger screenshot given below:
 
