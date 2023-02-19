@@ -34,10 +34,6 @@ Working demo of API in Azure : https://myhome-ie.azurewebsites.net/api/home
 ---
 Swagger : https://myhome-ie.azurewebsites.net/swagger/index.html
 ---
-Working demo of API in Docker Container : https://myhome-ie.herokuapp.com/api/home
----
-Swagger : https://myhome-ie.herokuapp.com/swagger/index.html
----
 
 To test the API using Swagger simply type "dotnet watch run" from the API directory and you will be redirected to the Swagger UI!
 
